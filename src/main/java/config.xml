@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
  xsi:schemaLocation="http://www.springframework.org/schema/beans
  https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-
-	<bean class="com.sprinCore.Student" name = "Student1" >
+	<!-- property injection -->
 	
-		<property name ="studentId">
-				<value>1</value>
-		</property>
-		
-		<property name ="studentName">
-				<value>HimanshuSharma</value>
-		</property>
-		
-		<property name ="studentAddress">
-				<value>Gurgoan,Harayana</value>
-		</property>
-		
+	<!-- bean 1 -->
+	<bean class="com.springCore.Student" name = "student1" p:studentId="1" p:studentName="Himanshu Sharma" p:studentAddress="Gurgoan, Haryana" />
 	
-	</bean>
+	<!-- bean 2 -->
+	<bean class="com.springCore.Student" name = "student2" p:studentId="2" p:studentName="Karan Sharma" p:studentAddress="Delhi" />
 
 </beans>

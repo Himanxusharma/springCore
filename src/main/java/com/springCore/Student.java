@@ -1,13 +1,10 @@
-/**
- * 
- */
 package com.springCore;
 
 public class Student {
 
 	private int studentId;
 	private String studentName;
-	private String StudentAddress;
+	private String studentAddress;
 	
 	
 	//Getters and Setters
@@ -24,10 +21,10 @@ public class Student {
 		this.studentName = studentName;
 	}
 	public String getStudentAddress() {
-		return StudentAddress;
+		return studentAddress;
 	}
 	public void setStudentAddress(String studentAddress) {
-		StudentAddress = studentAddress;
+		this.studentAddress = studentAddress;
 	}
 	
 	
@@ -38,7 +35,7 @@ public class Student {
 		super();
 		this.studentId = studentId;
 		this.studentName = studentName;
-		this.StudentAddress = studentAddress;
+		this.studentAddress = studentAddress;
 	}
 	
 	
@@ -51,7 +48,7 @@ public class Student {
 	
 	@Override
 	public String toString() {
-		return "Student [studentId=" + studentId + ", studentName=" + studentName + ", StudentAddress=" + StudentAddress
+		return "Student [studentId = " + studentId + ", studentName = " + studentName + ", studentAddress = " + studentAddress
 				+ "]";
 	}
 	
