@@ -1,0 +1,2 @@
+# springCore 
+## Maven project
