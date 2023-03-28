@@ -7,9 +7,9 @@
 - config.xml where we declared the beans and its dependencies are located in the packages.
 
 - we have inject the three types of dependencies using Setter injection as follows :
-  *   i. Primitive datatype( int, short, float, double, etc.)   you'll see the implementation at the package ["com.springCore"](https://github.com/Himanxusharma/springCore/tree/main/src/main/java/com/springCore)
-  *  ii. Collection (list, set, map, properties )   you'll see the implementation at the package ["com.springCore.collections"](https://github.com/Himanxusharma/springCore/tree/main/src/main/java/com/springCore/collections)
-  *  iii. Refrence Type (other class object )   you'll see the implementation at the package ["com.springCore.ref"](https://github.com/Himanxusharma/springCore/tree/main/src/main/java/com/springCore/ref)
+  *   i. Primitive datatype( int, short, float, double, etc.)   <br>   you'll see the implementation at the package ["com.springCore"](https://github.com/Himanxusharma/springCore/tree/main/src/main/java/com/springCore)
+  *  ii. Collection (list, set, map, properties )   <br>   you'll see the implementation at the package ["com.springCore.collections"](https://github.com/Himanxusharma/springCore/tree/main/src/main/java/com/springCore/collections)
+  *  iii. Refrence Type (other class object )   <br>   you'll see the implementation at the package ["com.springCore.ref"](https://github.com/Himanxusharma/springCore/tree/main/src/main/java/com/springCore/ref)
   
  
  
