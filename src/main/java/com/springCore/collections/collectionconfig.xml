@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- property injection -->
+	<bean name="Employee1" class="com.springCore.collections.Employee">
+	<property name="name" value="Harry" />
+	
+	<!--  inject list property -->
+	<property name="phone">
+		<list>
+			<value>741258963</value>
+			<value>963258741</value>
+			<value>123456789</value>
+			<value>987654321</value>
+			<value>159357862</value>
+		</list>
+	</property>
+	
+	<!--  inject set property -->
+	<property name="address">
+		<set>
+			<value>Delhi</value>
+			<value>Ghaziabad</value>
+			<value>Bulandshahr</value>
+			<value>Mumbai</value>
+			<value>Dubai</value>
+			<null/>
+		</set>
+	</property>
+	
+	<property name = "courses">
+		<map>
+			<entry key="java" value="2months" />
+			<entry key="python" value="1.5months" />
+			<entry key="c++" value="1months" />
+			<entry key="C" value="0.5months" />
+		</map>
+	</property>
+	
+	
+	<property name="props">
+	
+	<props>
+		<prop key="Gender">Male</prop>
+		<prop key="type">Employee</prop>
+		<prop key="post">SDE</prop>
+		
+	</props>
+	
+	</property>
+	
+	
+	
+	
+	</bean>
+
+</beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- property injection -->
+	
+	<!-- bean 1 -->
+	<bean class="com.springCore.ref.B" name = "bref" >
+	<property name="y" value="100" />
+	</bean>
+	
+	<bean class="com.springCore.ref.A" name ="aref" p:x="500" p:ob-ref="bref" />
+	
+	
+<!-- 	
+	<property name ="x" value="500" />
+	
+	<property name="ob">
+		<ref bean="bref" />
+	</property>
+	
+	<property name="ob" ref="bref" />
+	
+	</bean> -->
+
+
+</beans>
