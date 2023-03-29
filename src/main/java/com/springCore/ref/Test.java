@@ -8,7 +8,7 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/springCOre/ref/refconfig.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/springCore/ref/refconfig.xml");
 		A a = (A)context.getBean("aref");
 		System.out.println(a);
 
