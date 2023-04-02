@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:util="http://www.springframework.org/schema/util"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/util
+ https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+
+	<!-- standalone list -->
+	<util:list list-class="java.util.LinkedList" id="bff">
+		<value>Aman</value>
+		<value>Abhay</value>
+		<value>Ketan</value>
+		<value>Mishra</value>
+		<value>Varun</value>
+	</util:list>
+	
+	
+	<!-- standalone map -->
+	
+	<util:map map-class="java.util.HashMap" id="fee">
+		<entry key="spring" value="2000" />
+		<entry key="MVC" value="8000" />
+		<entry key="Web" value="1500" />
+	</util:map>
+	
+	<!-- standalone properties -->
+	
+	<util:properties	id="dbconfig">
+	
+		<prop key="driver">com.my.jdbc.driver</prop>
+		<prop key="username">Himanshu</prop>
+		<prop key="password">1234</prop>
+		<prop key="url">www.google.com</prop>
+	
+	</util:properties>
+	
+	
+
+<bean class="com.springCore.standalone.Person" name="person1" >
+
+<property name="friends" ref="bff" />
+<property name="feestructure" ref="fee" />
+<property name="properties" ref="dbconfig" />
+
+
+
+
+
+</bean>
+</beans>
