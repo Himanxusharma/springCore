@@ -3,6 +3,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xmlns:p="http://www.springframework.org/schema/p"
   xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:util="http://www.springframework.org/schema/util"
   xsi:schemaLocation="
     http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
@@ -11,7 +12,17 @@
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
     http://www.springframework.org/schema/context
-    http://www.springframework.org/schema/context/spring-context.,xsd">
+    http://www.springframework.org/schema/context/spring-context.xsd
+    	http://www.springframework.org/schema/util
+ https://www.springframework.org/schema/util/spring-util.xsd">
 
-
+	<context:component-scan base-package="com.springCore.stereotype" />
+	
+	<util:list list-class="java.util.ArrayList" id="add">
+	<value>Kanpur</value>
+	<value>Banaras</value>
+	<value>Chist</value>
+	</util:list>
+	
+	
 </beans>
