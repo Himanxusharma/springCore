@@ -25,4 +25,8 @@
 	</util:list>
 	
 	
+	
+	<!-- bean -->
+	<bean name="teacher" scope="prototype"	class="com.springCore.stereotype.Teacher" p:name="Karishma" p:phone="123456" p:add-ref="add" />
+	
 </beans>

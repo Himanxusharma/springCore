@@ -3,9 +3,11 @@ package com.springCore.stereotype;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("name")
+@Scope("prototype")
 public class Student {
 	
 	@Value("Habibi")
